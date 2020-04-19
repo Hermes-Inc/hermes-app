@@ -10,11 +10,11 @@ import styles from './styles';
 
 import strings from 'localization';
 import TextStyles from 'helpers/TextStyles';
-import { logout } from 'actions/UserActions';
+import UserActions from 'actions/UserActions';
 
 function Profile() {
   const dispatch = useDispatch();
-  const logoutUser = useCallback(() => dispatch(logout()), [dispatch]);
+  const logoutUser = useCallback(() => dispatch(UserActions.logout()), [dispatch]);
 
   return (
     <View style={styles.container}>

@@ -1,42 +1,38 @@
 import UserController from 'controllers/UserController';
+import { asyncActionCreator } from './utils';
 
-export const actionTypes = {
-  LOGIN: 'LOGIN',
-  LOGIN_REQUEST: 'LOGIN_REQUEST',
-  LOGIN_ERROR: 'LOGIN_ERROR',
-  LOGIN_SUCCESS: 'LOGIN_SUCCESS',
+const actionTypes = {
+  LOGIN: asyncActionCreator('LOGIN'),
   LOGOUT: 'LOGOUT',
 };
 
-const loginRequest = () => ({
-  type: actionTypes.LOGIN_REQUEST,
-});
-
-const loginError = error => ({
-  type: actionTypes.LOGIN_ERROR,
-  error,
-});
-
-const loginSuccess = user => ({
-  type: actionTypes.LOGIN_SUCCESS,
-  user,
-});
-
-const logoutRequest = () => ({
-  type: actionTypes.LOGOUT,
-});
-
-export const login = (email, password) => async (dispatch) => {
-  dispatch(loginRequest());
-  try {
-    const user = await UserController.login(email, password);
-    dispatch(loginSuccess(user));
-  } catch (error) {
-    dispatch(loginError(error.message));
+export class UserActions {
+  constructor(controller) {
+    this.controller = controller;
+    this.types = actionTypes;
   }
-};
 
-export const logout = () => (dispatch) => {
-  UserController.logout();
-  dispatch(logoutRequest());
-};
+  login = (email, password) => async (dispatch) => {
+    dispatch({ type: this.types.LOGIN.request });
+    try {
+      const user = await this.controller.login(email, password);
+      dispatch({
+        type: this.types.LOGIN.success,
+        payload: { user },
+      });
+    } catch (error) {
+      dispatch({
+        type: this.types.LOGIN.failure,
+        error: error.message,
+      });
+    }
+  };
+
+  logout = () => (dispatch) => {
+    this.controller.logout();
+    dispatch({ type: this.types.LOGOUT });
+  };
+}
+
+export default new UserActions(UserController);
+
