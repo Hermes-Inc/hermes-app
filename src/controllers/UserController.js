@@ -1,23 +1,18 @@
+import client from './HttpClient';
+
 class UserController {
-  constructor() {
-    this.basePath = '/users';
+  constructor(
+    basePath = '/sessions',
+    httpClient = client
+  ) {
+    this.url = basePath;
+    this.http = httpClient;
   }
 
-  login = async (email, password) =>
-    // This is a mocked example to simulate api behavior
-    new Promise((resolve, reject) => {
-      if (email !== 'a@a.com' && password !== '') {
-        setTimeout(
-          () => resolve({ name: 'Jorge' }),
-          1000,
-        );
-      } else {
-        setTimeout(
-          () => reject(new Error('Invalid Email/Password')),
-          1000,
-        );
-      }
-    });
+  login = async (email, password) => {
+    let response = await this.http.post(this.url, {email, password});
+    return response.data;
+  };
 
   logout = () => null;
 }

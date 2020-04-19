@@ -12,11 +12,11 @@ export default (state = {}, action) => {
     };
   }
 
-  if (type === actionTypes.GLOBAL_RESET) return {};
+  if (type === actionTypes.GLOBAL_RESET) { return {}; }
 
   const matchesReset = /(.*)_RESET/.exec(type);
 
-  if (!matchesReset) return state;
+  if (!matchesReset) { return state; }
 
   const [, requestName] = matchesReset;
   const newState = { ...state };

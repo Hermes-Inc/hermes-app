@@ -1,11 +1,6 @@
 import axios from 'axios';
 import { API_URL } from 'react-native-dotenv';
 
-/*
-  Base client config for your application.
-  Here you can define your base url, headers,
-  timeouts and middleware used for each request.
-*/
 const client = axios.create({
   baseURL: API_URL,
   timeout: 100000,
@@ -24,6 +19,12 @@ client.interceptors.response.use(response => response, (error) => {
   console.log('Request got response with error:');
   console.log(error);
   return Promise.reject(error);
+});
+
+// Error middleware. Makes the back end error message consistent with front-end fabricated errors.
+client.interceptors.response.use(response => response, (error) => {
+  const errorMsg = error.response.data.error;
+  return Promise.reject(new Error(errorMsg));
 });
 
 export default client;
