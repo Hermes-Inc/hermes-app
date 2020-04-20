@@ -34,7 +34,7 @@ const _ = {
       });
     });
   },
-  logRequestData: async (req, body) => {
+  logRequestData: (req, body) => {
     console.log(req.url);
     console.log(JSON.stringify(req.headers));
     console.log(body);
@@ -68,7 +68,7 @@ const handle = {
 function createMockApi(port) {
   _.createServer(async (req, res) => {
     const body = await _.getBody(req);
-    await _.logRequestData(req, body);
+    _.logRequestData(req, body);
     if (is.login(req)) {
       handle.login(res, body);
     } else {

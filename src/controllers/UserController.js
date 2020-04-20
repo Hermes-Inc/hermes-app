@@ -10,8 +10,12 @@ class UserController {
   }
 
   login = async (email, password) => {
-    let response = await this.http.post(this.url, {email, password});
-    return response.data;
+    try {
+      let response = await this.http.post(this.url, {email, password});
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
   };
 
   logout = () => null;
