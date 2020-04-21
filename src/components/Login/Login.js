@@ -23,7 +23,7 @@ function Login(props) {
   const [password, setPassword] = useState('');
 
   const isLoading = useSelector(state => isLoadingSelector([UserActions.types.LOGIN.action], state));
-  const errors = useSelector(state => errorsSelector([UserActions.types.LOGIN.failure], state));
+  const errors = useSelector(state => errorsSelector([UserActions.types.LOGIN.action], state));
 
   const dispatch = useDispatch();
   const loginUser = useCallback(
