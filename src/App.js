@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Colors from './helpers/Colors';
 import { store, persist } from './reducers';
 import Navigation from 'components/navigation';
+import SplashScreen from 'react-native-splash-screen';
 
 const styles = StyleSheet.create({
   container: {
@@ -24,6 +25,10 @@ export default function App() {
       setReady(true);
     });
   });
+
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
 
   const loading = (
     <View style={styles.container}>
