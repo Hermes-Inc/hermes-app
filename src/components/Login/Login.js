@@ -16,18 +16,18 @@ import TextStyles from 'helpers/TextStyles';
 import errorsSelector from 'selectors/ErrorSelectors';
 import { isLoadingSelector } from 'selectors/StatusSelectors';
 import strings from 'localization';
-import { login, actionTypes } from 'actions/UserActions';
+import UserActions from 'actions/UserActions';
 
 function Login(props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const isLoading = useSelector(state => isLoadingSelector([actionTypes.LOGIN], state));
-  const errors = useSelector(state => errorsSelector([actionTypes.LOGIN], state));
+  const isLoading = useSelector(state => isLoadingSelector([UserActions.types.LOGIN.action], state));
+  const errors = useSelector(state => errorsSelector([UserActions.types.LOGIN.action], state));
 
   const dispatch = useDispatch();
-  const loginUser = useCallback(() => (
-    dispatch(login(email, password))), [email, password, dispatch]);
+  const loginUser = useCallback(
+    () => (dispatch(UserActions.login(email, password))), [email, password, dispatch]);
   const passwordChanged = useCallback(value => setPassword(value), []);
   const emailChanged = useCallback(value => setEmail(value), []);
 

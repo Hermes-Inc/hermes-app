@@ -1,4 +1,4 @@
-import { actionTypes } from 'actions/UserActions';
+import UserActions from 'actions/UserActions';
 
 const initialState = {
   user: null,
@@ -6,16 +6,16 @@ const initialState = {
 
 const userReducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.LOGIN_REQUEST:
+    case UserActions.types.LOGIN.request:
       return {
         ...state,
       };
-    case actionTypes.LOGIN_SUCCESS:
+    case UserActions.types.LOGIN.success:
       return {
         ...state,
-        user: action.user,
+        user: action.payload.user,
       };
-    case actionTypes.LOGOUT:
+    case UserActions.types.LOGOUT:
       return initialState;
     default:
       return state;
