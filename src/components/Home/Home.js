@@ -3,6 +3,7 @@ import {
   View,
   Text,
   Button,
+  TouchableHighlight,
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
@@ -18,7 +19,6 @@ const Home = () => {
   const navigation = useNavigation();
   const getMessage = useCallback(() => `${strings.homeMessage} ${user && user.name}`, [user]);
   const handleOnPress = () => {
-    console.log('button pressed');
     navigation.navigate('Map');
   };
 
@@ -30,7 +30,16 @@ const Home = () => {
       <Text>
         {getMessage()}
       </Text>
-      <Button onPress={handleOnPress} title={'Open Map'}>Open Map</Button>
+      <TouchableHighlight
+        style ={{
+          height: 40,
+          width:160,
+          borderRadius:10,
+          backgroundColor : 'white',
+          marginTop: 10,
+        }}>
+        <Button onPress={handleOnPress} title={'Open Map'} />
+      </TouchableHighlight>
     </View>
   );
 };
