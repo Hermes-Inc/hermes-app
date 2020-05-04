@@ -12,8 +12,10 @@ class UserController {
   login = async (email, password) => {
     try {
       let response = await this.http.post(this.url, {email, password});
+      console.log(JSON.stringify(response));
       return response.data;
     } catch (error) {
+      console.log(JSON.stringify(error));
       throw error;
     }
   };

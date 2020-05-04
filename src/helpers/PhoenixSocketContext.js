@@ -8,7 +8,7 @@ const PhoenixSocketProvider = ({ children }) => {
   const [socket, setSocket] = useState();
 
   useEffect(() => {
-    const url = 'http://localhost:4000/socket';
+    const url = 'http://192.168.1.2:4000/socket';
     const mySocket = new Socket(url, {});
     mySocket.connect();
     setSocket(mySocket);

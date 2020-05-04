@@ -203,6 +203,13 @@ dependencies {
 
     }
 
+    implementation(project(':react-native-maps')){
+        exclude group: 'com.google.android.gms', module: 'play-services-base'
+        exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    }
+    implementation "com.google.android.gms:play-services-location:${rootProject.ext.googlePlayServicesVersion}" // disable if you don't want to use enableHighAccuracy: true in geolocation
+    implementation "com.google.android.gms:play-services-base:${rootProject.ext.googlePlayServicesVersion}"
+    implementation "com.google.android.gms:play-services-maps:${rootProject.ext.googlePlayServicesVersion}"
 
     debugImplementation("com.facebook.flipper:flipper-network-plugin:0.40.0") {
         exclude group:'com.facebook.flipper'
