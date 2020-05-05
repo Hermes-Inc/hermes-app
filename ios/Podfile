@@ -90,6 +90,8 @@ target 'HermesApp' do
 
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+
   target 'HermesAppTests' do
     inherit! :complete
     # Pods for testing
