@@ -7,7 +7,6 @@ import Colors from './helpers/Colors';
 import { store, persist } from './reducers';
 import Navigation from 'components/navigation';
 import SplashScreen from 'react-native-splash-screen';
-import { PhoenixSocketProvider } from 'helpers/PhoenixSocketContext';
 
 const styles = StyleSheet.create({
   container: {
@@ -39,11 +38,9 @@ export default function App() {
 
   const loaded = (
     <Provider store={store}>
-      <PhoenixSocketProvider>
         <NavigationContainer>
           <Navigation />
         </NavigationContainer>
-      </PhoenixSocketProvider>
     </Provider>
   );
 
