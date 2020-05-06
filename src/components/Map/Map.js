@@ -41,8 +41,10 @@ const Map = () => {
   }, []);
 
   // componentDidMount and componentDidUpdate
+  // TODO: find out why this doesnt work if i move it to the componentDidMount effect function
   useEffect(() => {
     const watchId = Geolocation.watchPosition(navPosition => {
+      // TODO: make this accept objects, not only arrays
       const pos = getRegionForCoordinates([{
         latitude: navPosition.coords.latitude,
         longitude: navPosition.coords.longitude,
@@ -55,6 +57,7 @@ const Map = () => {
     };
   });
 
+  // TODO: use spinner
   return (
     !currentRegion || !markerRegion
       ? <View>
