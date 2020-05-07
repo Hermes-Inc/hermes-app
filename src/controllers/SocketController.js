@@ -1,5 +1,5 @@
 import { Socket } from 'helpers/Phoenix';
-const url = 'http://192.168.1.2:4000/socket';
+const url = 'http://192.168.1.3:4000/socket';
 
 class SocketController {
   constructor() {

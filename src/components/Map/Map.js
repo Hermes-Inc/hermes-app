@@ -25,24 +25,17 @@ const Map = () => {
   const dispatchLocate = () => {
     dispatch(MapActions.locate(currentRef.current));
   };
+  const dispatchUnmount = () => {
+    dispatch(MapActions.unmount());
+  };
 
   // componentDidMount
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(currentRef.current, getReadableDateTime());
       forceUpdate();
       dispatchLocate();
     }, 5000);
-    // componentWillUnmount
-    // TODO: dispatch action that leaves phoenix channel
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
-  // componentDidMount and componentDidUpdate
-  // TODO: find out why this doesnt work if i move it to the componentDidMount effect function
-  useEffect(() => {
     const watchId = Geolocation.watchPosition(navPosition => {
       // TODO: make this accept objects, not only arrays
       const pos = getRegionForCoordinates([{
@@ -52,10 +45,14 @@ const Map = () => {
       setCurrentRegion(pos);
       setMarkerRegion(pos);
     });
+    // componentWillUnmount
+    // TODO: dispatch action that leaves phoenix channel
     return () => {
+      clearInterval(interval);
       Geolocation.clearWatch(watchId);
+      dispatchUnmount();
     };
-  });
+  }, []);
 
   // TODO: use spinner
   return (
