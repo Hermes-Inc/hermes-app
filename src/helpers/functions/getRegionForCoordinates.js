@@ -1,7 +1,11 @@
 // THIS ZOOMS CORRECTLY OVER A SET OF COORDINATES
 const getRegionForCoordinates = points => {
-  // points should be an array of { latitude: X, longitude: Y }
+  // points should be an array of { latitude: X, longitude: Y } or just an object
   let minX, maxX, minY, maxY;
+
+  if (typeof(points) == 'object') {
+    points = [points];
+  }
 
   ((point) => {
     minX = point.latitude;

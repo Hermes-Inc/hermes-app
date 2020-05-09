@@ -1,12 +1,12 @@
-import React, {useEffect, useState, useRef} from 'react';
-import {View, Text} from 'react-native';
-import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
+import React, { useEffect, useState, useRef } from 'react';
+import { View } from 'react-native';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import styles from './styles';
 import getRegionForCoordinates from 'helpers/functions/getRegionForCoordinates';
 import Geolocation from '@react-native-community/geolocation';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import MapActions from 'actions/MapActions';
-import getReadableDateTime from 'helpers/functions/getReadableDateTime';
+import Spinner from 'components/common/Spinner';
 
 const Map = () => {
   const [markerRegion, setMarkerRegion] = useState();
@@ -14,8 +14,6 @@ const Map = () => {
   const currentRef = useRef(currentRegion);
   currentRef.current = currentRegion;
 
-  // use if we want to redirect the user view to marker location
-  // be advised: it re-renders the component
   const forceUpdate = () => {
     setMarkerRegion(null);
     setMarkerRegion(currentRef.current);
@@ -37,16 +35,15 @@ const Map = () => {
     }, 5000);
 
     const watchId = Geolocation.watchPosition(navPosition => {
-      // TODO: make this accept objects, not only arrays
-      const pos = getRegionForCoordinates([{
+      const reg = getRegionForCoordinates({
         latitude: navPosition.coords.latitude,
         longitude: navPosition.coords.longitude,
-      }]);
-      setCurrentRegion(pos);
-      setMarkerRegion(pos);
+      });
+      setCurrentRegion(reg);
+      setMarkerRegion(reg);
     });
+
     // componentWillUnmount
-    // TODO: dispatch action that leaves phoenix channel
     return () => {
       clearInterval(interval);
       Geolocation.clearWatch(watchId);
@@ -54,11 +51,10 @@ const Map = () => {
     };
   }, []);
 
-  // TODO: use spinner
   return (
     !currentRegion || !markerRegion
       ? <View>
-        <Text>Loading...</Text>
+        <Spinner/>
       </View>
       : <MapView
         provider={PROVIDER_GOOGLE}

@@ -1,4 +1,4 @@
-import { Socket } from 'helpers/Phoenix';
+import { Socket } from 'helpers/phoenix/Phoenix';
 const url = 'http://192.168.1.3:4000/socket';
 
 class SocketController {
