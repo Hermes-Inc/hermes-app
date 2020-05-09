@@ -9,6 +9,7 @@ import MapActions from 'actions/MapActions';
 import Spinner from 'components/common/Spinner';
 
 const Map = () => {
+  const sendLocationEvery = 5000;
   const [markerRegion, setMarkerRegion] = useState();
   const [currentRegion, setCurrentRegion] = useState();
   const currentRef = useRef(currentRegion);
@@ -32,7 +33,7 @@ const Map = () => {
     const interval = setInterval(() => {
       forceUpdate();
       dispatchLocate();
-    }, 5000);
+    }, sendLocationEvery);
 
     const watchId = Geolocation.watchPosition(navPosition => {
       const reg = getRegionForCoordinates({
@@ -51,6 +52,7 @@ const Map = () => {
     };
   }, []);
 
+  // TODO: check permission stuff https://github.com/react-native-community/react-native-maps/issues/2793
   return (
     !currentRegion || !markerRegion
       ? <View>
@@ -59,7 +61,9 @@ const Map = () => {
       : <MapView
         provider={PROVIDER_GOOGLE}
         style={styles.map}
-        initialRegion={currentRegion}>
+        initialRegion={currentRegion}
+        followsUserLocation={true}
+        showsUserLocation={true}>
         <MapView.Marker
           coordinate={markerRegion}
           title={'Your Location'}
