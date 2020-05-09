@@ -14,14 +14,20 @@ export class MapActions {
   }
 
   locate = (coordinates) => async (dispatch) => {
-    const channel = await this.controller.useChannel('example');
-    const {latitude, longitude} = coordinates;
-    // TODO: wrap this a bit more, use a custom channel class to improve error handling
-    channel.push('example:broadcast', {latitude, longitude, message: 'Hello Phoenix!', ...getReadableDateTime()});
-    dispatch({
-      type: this.types.LOCATE.success,
-      payload: { coordinates },
-    });
+    try {
+      const channel = await this.controller.useChannel('example');
+      const {latitude, longitude} = coordinates;
+      channel.push('example:broadcast', {latitude, longitude, message: 'Hello Phoenix!', ...getReadableDateTime()});
+      dispatch({
+        type: this.types.LOCATE.success,
+        payload: { coordinates },
+      });
+    } catch (e) {
+      dispatch({
+        type: this.types.LOCATE.failure,
+        error: error.message,
+      });
+    }
   };
 
   unmount = () => async (dispatch) => {

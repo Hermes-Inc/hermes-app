@@ -1,4 +1,4 @@
-export default class SocketController {
+export default class PhoenixChannel {
   constructor(name, channel) {
     this.name = name;
     this.channel = channel;
