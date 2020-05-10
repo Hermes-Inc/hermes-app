@@ -8,4 +8,9 @@ const getReadableDateTime = () => {
       + (currentDate.getSeconds() < 10 ? '0' + currentDate.getSeconds() : currentDate.getSeconds()) };
 };
 
-export default getReadableDateTime;
+const dateDiffInSeconds = (d1, d2) =>{
+  const dif = d1.getTime() - d2.getTime();
+  return Math.abs(dif / 1000);
+};
+
+export { getReadableDateTime, dateDiffInSeconds};

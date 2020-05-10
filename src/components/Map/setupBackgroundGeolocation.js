@@ -1,6 +1,6 @@
 import { Alert } from 'react-native';
 
-export default function setupBackgroundGeolocation(BackgroundGeolocation, onLocation) {
+export default function setupBackgroundGeolocation(BackgroundGeolocation, onLocation, onBackground, onForeground) {
   BackgroundGeolocation.configure({
     desiredAccuracy: BackgroundGeolocation.HIGH_ACCURACY,
     stationaryRadius: 50,
@@ -37,13 +37,9 @@ export default function setupBackgroundGeolocation(BackgroundGeolocation, onLoca
     }
   });
 
-  BackgroundGeolocation.on('background', () => {
-    console.log('[INFO] App is in background');
-  });
+  BackgroundGeolocation.on('background', onBackground);
 
-  BackgroundGeolocation.on('foreground', () => {
-    console.log('[INFO] App is in foreground');
-  });
+  BackgroundGeolocation.on('foreground', onForeground);
 
   BackgroundGeolocation.checkStatus(status => {
     if (!status.isRunning) {

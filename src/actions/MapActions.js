@@ -1,6 +1,6 @@
 import SocketController from 'controllers/SocketController';
 import { asyncActionCreator } from './utils';
-import getReadableDateTime from 'helpers/functions/getReadableDateTime';
+import { getReadableDateTime } from 'helpers/functions/dateFunctions';
 
 const actionTypes = {
   LOCATE: asyncActionCreator('LOCATE'),
@@ -21,7 +21,7 @@ export class MapActions {
       channel.push('example:broadcast', {latitude, longitude, message: 'Hello Phoenix!', ...getReadableDateTime()});
       dispatch({
         type: this.types.LOCATE.success,
-        payload: { coordinates },
+        payload: {coordinates},
       });
     } catch (e) {
       dispatch({
@@ -33,7 +33,7 @@ export class MapActions {
 
   unmount = () => async (dispatch) => {
     this.controller.leaveChannel(this.channelName);
-    dispatch({ type: this.types.UNMOUNT });
+    dispatch({type: this.types.UNMOUNT});
   }
 }
 

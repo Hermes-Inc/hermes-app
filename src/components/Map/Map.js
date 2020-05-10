@@ -3,16 +3,16 @@ import { View, PermissionsAndroid } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import styles from './styles';
 import getRegionForCoordinates from 'helpers/functions/getRegionForCoordinates';
-import Geolocation from '@react-native-community/geolocation';
 import { useDispatch } from 'react-redux';
 import MapActions from 'actions/MapActions';
 import Spinner from 'components/common/Spinner';
 import BackgroundGeolocation from '@mauron85/react-native-background-geolocation';
 import setupBackgroundGeolocation from 'components/Map/setupBackgroundGeolocation';
-import getReadableDateTime from 'helpers/functions/getReadableDateTime';
+import { getReadableDateTime, dateDiffInSeconds } from 'helpers/functions/dateFunctions';
+
+let lastSentOn = null;
 
 // TODO: add button to re-enable location tracking after drag
-// TODO: move the background location stuff to another file or something
 const Map = () => {
   const sendLocationEvery = 5000;
   const [currentRegion, setCurrentRegion] = useState();
@@ -23,11 +23,22 @@ const Map = () => {
 
   const dispatch = useDispatch();
   const dispatchLocate = () => {
-    console.log({
-      latitude: currentRef.current.latitude,
-      longitude: currentRef.current.longitude, ...getReadableDateTime()
-    });
-    dispatch(MapActions.locate(currentRef.current));
+    if (!lastSentOn) {
+      lastSentOn = new Date();
+    }
+
+    const now = new Date();
+    const diff = dateDiffInSeconds(lastSentOn, now);
+    console.log('difference: ', diff);
+
+    if (diff >= sendLocationEvery / 1000) {
+      console.log({
+        latitude: currentRef.current.latitude,
+        longitude: currentRef.current.longitude, ...getReadableDateTime()
+      });
+      lastSentOn = now;
+      dispatch(MapActions.locate(currentRef.current));
+    }
   };
   const dispatchUnmount = () => {
     dispatch(MapActions.unmount());
@@ -73,21 +84,23 @@ const Map = () => {
       dispatchLocate();
     }, sendLocationEvery);
 
-    const watchId = Geolocation.getCurrentPosition(navPosition => {
-      const reg = getRegionForCoordinates(navPosition.coords);
-      setCurrentRegion(reg);
-    });
-    Geolocation.clearWatch(watchId);
-
-    setupBackgroundGeolocation(BackgroundGeolocation, (location) => {
-      console.log('new location');
-      BackgroundGeolocation.startTask(taskKey => {
-        setCurrentRegion(getRegionForCoordinates(location));
-        console.log('setting location');
-        dispatchLocate();
-        BackgroundGeolocation.endTask(taskKey);
+    setupBackgroundGeolocation(
+      BackgroundGeolocation,
+      (location) => {
+        console.log('new location');
+        BackgroundGeolocation.startTask(taskKey => {
+          console.log('setting location');
+          setCurrentRegion(getRegionForCoordinates(location));
+          dispatchLocate();
+          BackgroundGeolocation.endTask(taskKey);
+        });
+      },
+      () => {
+        console.log('[INFO] App is in background');
+      },
+      () => {
+        console.log('[INFO] App is in foreground');
       });
-    });
 
     // componentWillUnmount
     return () => {
@@ -96,7 +109,6 @@ const Map = () => {
     };
   }, []);
 
-  // TODO: check permission stuff https://github.com/react-native-community/react-native-maps/issues/2793
   return (
     !currentRegion
       ? <View>
