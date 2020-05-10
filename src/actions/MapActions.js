@@ -11,11 +11,12 @@ export class MapActions {
   constructor(controller) {
     this.controller = controller;
     this.types = actionTypes;
+    this.channelName = 'example';
   }
 
   locate = (coordinates) => async (dispatch) => {
     try {
-      const channel = await this.controller.useChannel('example');
+      const channel = await this.controller.useChannel(this.channelName);
       const {latitude, longitude} = coordinates;
       channel.push('example:broadcast', {latitude, longitude, message: 'Hello Phoenix!', ...getReadableDateTime()});
       dispatch({
@@ -31,7 +32,7 @@ export class MapActions {
   };
 
   unmount = () => async (dispatch) => {
-    this.controller.leaveChannel('example');
+    this.controller.leaveChannel(this.channelName);
     dispatch({ type: this.types.UNMOUNT });
   }
 }
