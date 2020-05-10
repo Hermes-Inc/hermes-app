@@ -51,7 +51,7 @@ const Map = () => {
       distanceFilter: 50,
       notificationTitle: 'Background tracking',
       notificationText: 'enabled',
-      debug: true,
+      debug: false,
       startOnBoot: false,
       stopOnTerminate: true,
       locationProvider: BackgroundGeolocation.ACTIVITY_PROVIDER,
@@ -59,7 +59,7 @@ const Map = () => {
       fastestInterval: 5000,
       activitiesInterval: 10000,
       stopOnStillActivity: false,
-      url: 'http://localhost:3000/location',
+      url: 'http://192.168.1.3:3000/location',
       httpHeaders: {
         'X-FOO': 'bar'
       },

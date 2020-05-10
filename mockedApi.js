@@ -29,8 +29,12 @@ const _ = {
         body.push(chunk);
       }).on('end', () => {
         // eslint-disable-next-line no-undef
-        body = Buffer.concat(body).toString();
-        resolve(JSON.parse(body));
+        try {
+          body = Buffer.concat(body).toString();
+          resolve(JSON.parse(body));
+        } catch (e) {
+          resolve(body);
+        }
       });
     });
   },
@@ -50,7 +54,7 @@ const _ = {
 // endpoint detection
 const is = {
   login: (req) => {
-    return req.url === '/sessions' && req.method === 'POST';
+    return req && req.url === '/sessions' && req.method === 'POST';
   },
 };
 
@@ -72,7 +76,7 @@ function createMockApi(port) {
     if (is.login(req)) {
       handle.login(res, body);
     } else {
-      _.respond(res, { msg: 'Test!' });
+      _.respond(res, 200, { msg: 'Test!' });
     }
   }, port);
 }

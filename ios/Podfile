@@ -92,6 +92,8 @@ target 'HermesApp' do
 
   pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
 
+  pod '@mauron85_react-native-background-geolocation', :path => '../node_modules/@mauron85/react-native-background-geolocation'
+
   target 'HermesAppTests' do
     inherit! :complete
     # Pods for testing
