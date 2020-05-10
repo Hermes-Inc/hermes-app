@@ -21,7 +21,7 @@ class SocketController {
             this.activeChannels.push(phoenixChannel);
             resolve(phoenixChannel);
           },
-          () => reject(throw new Error(`Error connecting to channel ${phoenixChannel.name}`))
+          () => reject(`Error connecting to channel ${phoenixChannel.name}`)
         )
       });
     } else {
