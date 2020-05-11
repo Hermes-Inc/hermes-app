@@ -10,6 +10,7 @@ import BackgroundGeolocation from '@mauron85/react-native-background-geolocation
 import setupBackgroundGeolocation from 'components/Map/setupBackgroundGeolocation';
 import { dateDiffInSeconds } from 'helpers/functions/dateFunctions';
 import requestLocationPermission from 'components/Map/requestLocationPermission';
+import Button from 'components/common/Button';
 
 // TODO: add button to re-enable location tracking after drag
 const Map = () => {
@@ -40,6 +41,10 @@ const Map = () => {
       setCanUpdateRegion(false);
       setLastRegion(currentRegion);
     }
+  };
+
+  const onResetDrag = () => {
+    setCanUpdateRegion(true);
   };
 
   const onRegionChange = (reg) => {
@@ -78,7 +83,8 @@ const Map = () => {
       ? <View>
         <Spinner/>
       </View>
-      : <MapView
+      : <View style={{flex: 1}}>
+      <MapView
         provider={PROVIDER_GOOGLE}
         style={styles.map}
         initialRegion={currentRegion}
@@ -88,6 +94,16 @@ const Map = () => {
         onPanDrag={onDrag}
         followsUserLocation={true}>
       </MapView>
+        <View
+          style={{
+            position: 'absolute',//use absolute position to show button on top of the map
+            top: '50%', //for center align
+            alignSelf: 'flex-end' //for align to right
+          }}
+        >
+          <Button title={'Re-center'} onPress={onResetDrag}/>
+        </View>
+      </View>
   );
 };
 
