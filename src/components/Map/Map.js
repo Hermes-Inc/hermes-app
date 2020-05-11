@@ -12,7 +12,6 @@ import { dateDiffInSeconds } from 'helpers/functions/dateFunctions';
 import requestLocationPermission from 'components/Map/requestLocationPermission';
 import Button from 'components/common/Button';
 
-// TODO: add button to re-enable location tracking after drag
 const Map = () => {
   const sendLocationEvery = 5000;
   let lastSentOn = new Date();
@@ -96,9 +95,9 @@ const Map = () => {
       </MapView>
         <View
           style={{
-            position: 'absolute',//use absolute position to show button on top of the map
-            top: '50%', //for center align
-            alignSelf: 'flex-end' //for align to right
+            position: 'absolute',
+            top: '50%',
+            alignSelf: 'flex-end'
           }}
         >
           <Button title={'Re-center'} onPress={onResetDrag}/>
