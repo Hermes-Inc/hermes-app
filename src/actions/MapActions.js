@@ -18,7 +18,9 @@ export class MapActions {
     try {
       const channel = await this.controller.useChannel(this.channelName);
       const {latitude, longitude} = coordinates;
-      channel.push('example:broadcast', {latitude, longitude, message: 'Hello Phoenix!', ...getReadableDateTime()});
+      const payload = {latitude, longitude, message: 'Hello Phoenix!', ...getReadableDateTime()};
+      console.log(payload);
+      channel.push('example:broadcast', payload);
       dispatch({
         type: this.types.LOCATE.success,
         payload: {coordinates},
