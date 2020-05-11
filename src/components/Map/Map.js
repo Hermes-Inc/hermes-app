@@ -64,7 +64,7 @@ const Map = () => {
           BackgroundGeolocation.endTask(taskKey);
         })
       }
-      );
+    );
 
     // componentWillUnmount
     return () => {
