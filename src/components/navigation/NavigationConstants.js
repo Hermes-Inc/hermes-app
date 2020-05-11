@@ -3,4 +3,5 @@ export default {
   home: 'Home',
   profile: 'Profile',
   map: 'Map',
+  shipments: 'Shipments',
 };

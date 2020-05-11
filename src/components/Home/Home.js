@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import {
   View,
   Text,
@@ -21,6 +21,10 @@ const Home = () => {
   const handleOnPress = () => {
     navigation.navigate('Map');
   };
+
+  useEffect(() => {
+    navigation.navigate('Shipments');
+  }, []);
 
   return (
     <View style={styles.container}>

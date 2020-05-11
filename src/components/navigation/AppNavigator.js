@@ -10,10 +10,11 @@ import Map from 'components/Map';
 import Colors from 'helpers/Colors';
 import iconForTab from 'helpers/TabNavigator';
 import { BottomTabBar } from '@react-navigation/bottom-tabs';
+import Shipments from 'components/Shipments';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
-const skippedTabs = [NavigationConstants.map];
+const skippedTabs = [NavigationConstants.map, NavigationConstants.shipments];
 
 const buildTabBar = (props) => {
   const getTabsToShow = routes => routes.filter(route => !skippedTabs.includes(route.name));
@@ -56,6 +57,15 @@ const MapNavigator = () => (
   </Stack.Navigator>
 );
 
+const ShipmentsNavigator = () => (
+  <Stack.Navigator>
+    <Stack.Screen
+      name={NavigationConstants.shipments}
+      component={Shipments}
+    />
+  </Stack.Navigator>
+);
+
 const AppNavigator = () => (
   <Tab.Navigator
     tabBar={props => buildTabBar(props)}
@@ -70,6 +80,7 @@ const AppNavigator = () => (
     <Tab.Screen name={NavigationConstants.home} component={HomeNavigator} />
     <Tab.Screen name={NavigationConstants.profile} component={ProfileNavigator} />
     <Tab.Screen name={NavigationConstants.map} component={MapNavigator} />
+    <Tab.Screen name={NavigationConstants.shipments} component={ShipmentsNavigator} />
   </Tab.Navigator>
 );
 
