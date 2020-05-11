@@ -44,8 +44,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'HermesApp' do
-  # Pods for HermesApp
+target 'Hermes' do
+  # Pods for Hermes
   rn_path = '../node_modules/react-native'
   rn_maps_path = '../node_modules/react-native-maps'
 
@@ -94,7 +94,7 @@ target 'HermesApp' do
 
   pod '@mauron85_react-native-background-geolocation', :path => '../node_modules/@mauron85/react-native-background-geolocation'
 
-  target 'HermesAppTests' do
+  target 'HermesTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -111,10 +111,10 @@ target 'HermesApp' do
   end
 end
 
-target 'HermesApp-tvOS' do
-  # Pods for HermesApp-tvOS
+target 'Hermes-tvOS' do
+  # Pods for Hermes-tvOS
 
-  target 'HermesApp-tvOSTests' do
+  target 'Hermes-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

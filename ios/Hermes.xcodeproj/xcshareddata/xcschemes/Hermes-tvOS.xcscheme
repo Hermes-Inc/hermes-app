@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "HermesApp-tvOS.app"
-               BlueprintName = "HermesApp-tvOS"
-               ReferencedContainer = "container:HermesApp.xcodeproj">
+               BuildableName = "Hermes-tvOS.app"
+               BlueprintName = "Hermes-tvOS"
+               ReferencedContainer = "container:Hermes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "HermesApp-tvOSTests.xctest"
-               BlueprintName = "HermesApp-tvOSTests"
-               ReferencedContainer = "container:HermesApp.xcodeproj">
+               BuildableName = "Hermes-tvOSTests.xctest"
+               BlueprintName = "Hermes-tvOSTests"
+               ReferencedContainer = "container:Hermes.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "HermesApp-tvOS.app"
-            BlueprintName = "HermesApp-tvOS"
-            ReferencedContainer = "container:HermesApp.xcodeproj">
+            BuildableName = "Hermes-tvOS.app"
+            BlueprintName = "Hermes-tvOS"
+            ReferencedContainer = "container:Hermes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "HermesApp-tvOS.app"
-            BlueprintName = "HermesApp-tvOS"
-            ReferencedContainer = "container:HermesApp.xcodeproj">
+            BuildableName = "Hermes-tvOS.app"
+            BlueprintName = "Hermes-tvOS"
+            ReferencedContainer = "container:Hermes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

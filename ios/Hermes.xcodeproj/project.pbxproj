@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* HermesAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HermesAppTests.m */; };
+		00E356F31AD99517003FC87E /* HermesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HermesTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* HermesAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HermesAppTests.m */; };
-		41CA0915A3F13A07B176F095 /* libPods-HermesApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59F13704BDBB9A1791D349E /* libPods-HermesApp-tvOSTests.a */; };
-		7823CE99A58E1B363C6C281E /* libPods-HermesApp-HermesAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755D434D8590ADB2FB375E8 /* libPods-HermesApp-HermesAppTests.a */; };
-		A5C428DD683CB2DE83C0CF95 /* libPods-HermesApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D42F77FBDC75B2C4F4D37 /* libPods-HermesApp-tvOS.a */; };
-		F6AA3BE3484B1BD918B5FE09 /* libPods-HermesApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C878779C9797972290E69FFF /* libPods-HermesApp.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* HermesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HermesTests.m */; };
+		41CA0915A3F13A07B176F095 /* libPods-Hermes-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59F13704BDBB9A1791D349E /* libPods-Hermes-tvOSTests.a */; };
+		7823CE99A58E1B363C6C281E /* libPods-Hermes-HermesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755D434D8590ADB2FB375E8 /* libPods-Hermes-HermesTests.a */; };
+		A5C428DD683CB2DE83C0CF95 /* libPods-Hermes-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D42F77FBDC75B2C4F4D37 /* libPods-Hermes-tvOS.a */; };
+		F6AA3BE3484B1BD918B5FE09 /* libPods-Hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C878779C9797972290E69FFF /* libPods-Hermes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = HermesApp;
+			remoteInfo = Hermes;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "HermesApp-tvOS";
+			remoteInfo = "Hermes-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* HermesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* HermesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* HermesAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HermesAppTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* HermesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HermesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HermesApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HermesApp/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* HermesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HermesTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Hermes/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Hermes/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HermesApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HermesApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HermesApp/main.m; sourceTree = "<group>"; };
-		141F539ECBE5EE459D85A85D /* Pods-HermesApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-HermesApp-tvOS/Pods-HermesApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2755D434D8590ADB2FB375E8 /* libPods-HermesApp-HermesAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HermesApp-HermesAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CDC8193511A01CB36A1DBB9 /* Pods-HermesApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-HermesApp-tvOSTests/Pods-HermesApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* HermesApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HermesApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* HermesApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HermesApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		326F979F7F79E9870ED4A0B2 /* Pods-HermesApp-HermesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp-HermesAppTests.release.xcconfig"; path = "Target Support Files/Pods-HermesApp-HermesAppTests/Pods-HermesApp-HermesAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		4598B45F72AEC70428C1C3E8 /* Pods-HermesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp.debug.xcconfig"; path = "Target Support Files/Pods-HermesApp/Pods-HermesApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6ACA4882B8BE104134161604 /* Pods-HermesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp.release.xcconfig"; path = "Target Support Files/Pods-HermesApp/Pods-HermesApp.release.xcconfig"; sourceTree = "<group>"; };
-		83BA88B51D6EA07E27D0024D /* Pods-HermesApp-HermesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp-HermesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HermesApp-HermesAppTests/Pods-HermesApp-HermesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		97D3C9C650300E4A05EF82FF /* Pods-HermesApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-HermesApp-tvOS/Pods-HermesApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		B59F13704BDBB9A1791D349E /* libPods-HermesApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HermesApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C878779C9797972290E69FFF /* libPods-HermesApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HermesApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E68D42F77FBDC75B2C4F4D37 /* libPods-HermesApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HermesApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECD75DD976BFE113274DCD8C /* Pods-HermesApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermesApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-HermesApp-tvOSTests/Pods-HermesApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Hermes/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Hermes/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Hermes/main.m; sourceTree = "<group>"; };
+		141F539ECBE5EE459D85A85D /* Pods-Hermes-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Hermes-tvOS/Pods-Hermes-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2755D434D8590ADB2FB375E8 /* libPods-Hermes-HermesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hermes-HermesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CDC8193511A01CB36A1DBB9 /* Pods-Hermes-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Hermes-tvOSTests/Pods-Hermes-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Hermes-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermes-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Hermes-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hermes-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		326F979F7F79E9870ED4A0B2 /* Pods-Hermes-HermesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes-HermesTests.release.xcconfig"; path = "Target Support Files/Pods-Hermes-HermesTests/Pods-Hermes-HermesTests.release.xcconfig"; sourceTree = "<group>"; };
+		4598B45F72AEC70428C1C3E8 /* Pods-Hermes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes.debug.xcconfig"; path = "Target Support Files/Pods-Hermes/Pods-Hermes.debug.xcconfig"; sourceTree = "<group>"; };
+		6ACA4882B8BE104134161604 /* Pods-Hermes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes.release.xcconfig"; path = "Target Support Files/Pods-Hermes/Pods-Hermes.release.xcconfig"; sourceTree = "<group>"; };
+		83BA88B51D6EA07E27D0024D /* Pods-Hermes-HermesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes-HermesTests.debug.xcconfig"; path = "Target Support Files/Pods-Hermes-HermesTests/Pods-Hermes-HermesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97D3C9C650300E4A05EF82FF /* Pods-Hermes-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Hermes-tvOS/Pods-Hermes-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B59F13704BDBB9A1791D349E /* libPods-Hermes-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hermes-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C878779C9797972290E69FFF /* libPods-Hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68D42F77FBDC75B2C4F4D37 /* libPods-Hermes-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hermes-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD75DD976BFE113274DCD8C /* Pods-Hermes-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Hermes-tvOSTests/Pods-Hermes-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7823CE99A58E1B363C6C281E /* libPods-HermesApp-HermesAppTests.a in Frameworks */,
+				7823CE99A58E1B363C6C281E /* libPods-Hermes-HermesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6AA3BE3484B1BD918B5FE09 /* libPods-HermesApp.a in Frameworks */,
+				F6AA3BE3484B1BD918B5FE09 /* libPods-Hermes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C428DD683CB2DE83C0CF95 /* libPods-HermesApp-tvOS.a in Frameworks */,
+				A5C428DD683CB2DE83C0CF95 /* libPods-Hermes-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CA0915A3F13A07B176F095 /* libPods-HermesApp-tvOSTests.a in Frameworks */,
+				41CA0915A3F13A07B176F095 /* libPods-Hermes-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* HermesAppTests */ = {
+		00E356EF1AD99517003FC87E /* HermesTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* HermesAppTests.m */,
+				00E356F21AD99517003FC87E /* HermesTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = HermesAppTests;
+			path = HermesTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* HermesApp */ = {
+		13B07FAE1A68108700A75B9A /* Hermes */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = HermesApp;
+			name = Hermes;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				C878779C9797972290E69FFF /* libPods-HermesApp.a */,
-				2755D434D8590ADB2FB375E8 /* libPods-HermesApp-HermesAppTests.a */,
-				E68D42F77FBDC75B2C4F4D37 /* libPods-HermesApp-tvOS.a */,
-				B59F13704BDBB9A1791D349E /* libPods-HermesApp-tvOSTests.a */,
+				C878779C9797972290E69FFF /* libPods-Hermes.a */,
+				2755D434D8590ADB2FB375E8 /* libPods-Hermes-HermesTests.a */,
+				E68D42F77FBDC75B2C4F4D37 /* libPods-Hermes-tvOS.a */,
+				B59F13704BDBB9A1791D349E /* libPods-Hermes-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		4E67C6D1D737E3524678D4A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4598B45F72AEC70428C1C3E8 /* Pods-HermesApp.debug.xcconfig */,
-				6ACA4882B8BE104134161604 /* Pods-HermesApp.release.xcconfig */,
-				83BA88B51D6EA07E27D0024D /* Pods-HermesApp-HermesAppTests.debug.xcconfig */,
-				326F979F7F79E9870ED4A0B2 /* Pods-HermesApp-HermesAppTests.release.xcconfig */,
-				141F539ECBE5EE459D85A85D /* Pods-HermesApp-tvOS.debug.xcconfig */,
-				97D3C9C650300E4A05EF82FF /* Pods-HermesApp-tvOS.release.xcconfig */,
-				2CDC8193511A01CB36A1DBB9 /* Pods-HermesApp-tvOSTests.debug.xcconfig */,
-				ECD75DD976BFE113274DCD8C /* Pods-HermesApp-tvOSTests.release.xcconfig */,
+				4598B45F72AEC70428C1C3E8 /* Pods-Hermes.debug.xcconfig */,
+				6ACA4882B8BE104134161604 /* Pods-Hermes.release.xcconfig */,
+				83BA88B51D6EA07E27D0024D /* Pods-Hermes-HermesTests.debug.xcconfig */,
+				326F979F7F79E9870ED4A0B2 /* Pods-Hermes-HermesTests.release.xcconfig */,
+				141F539ECBE5EE459D85A85D /* Pods-Hermes-tvOS.debug.xcconfig */,
+				97D3C9C650300E4A05EF82FF /* Pods-Hermes-tvOS.release.xcconfig */,
+				2CDC8193511A01CB36A1DBB9 /* Pods-Hermes-tvOSTests.debug.xcconfig */,
+				ECD75DD976BFE113274DCD8C /* Pods-Hermes-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* HermesApp */,
+				13B07FAE1A68108700A75B9A /* Hermes */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* HermesAppTests */,
+				00E356EF1AD99517003FC87E /* HermesTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4E67C6D1D737E3524678D4A6 /* Pods */,
@@ -189,10 +189,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* HermesApp.app */,
-				00E356EE1AD99517003FC87E /* HermesAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* HermesApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* HermesApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Hermes.app */,
+				00E356EE1AD99517003FC87E /* HermesTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Hermes-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Hermes-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* HermesAppTests */ = {
+		00E356ED1AD99517003FC87E /* HermesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HermesAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HermesTests" */;
 			buildPhases = (
 				74D32F20A8AF37150BC0FFE8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = HermesAppTests;
-			productName = HermesAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* HermesAppTests.xctest */;
+			name = HermesTests;
+			productName = HermesTests;
+			productReference = 00E356EE1AD99517003FC87E /* HermesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* HermesApp */ = {
+		13B07F861A680F5B00A75B9A /* Hermes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "HermesApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Hermes" */;
 			buildPhases = (
 				F5A2190C2BE338AA72F1289D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -236,14 +236,14 @@
 			);
 			dependencies = (
 			);
-			name = HermesApp;
-			productName = HermesApp;
-			productReference = 13B07F961A680F5B00A75B9A /* HermesApp.app */;
+			name = Hermes;
+			productName = Hermes;
+			productReference = 13B07F961A680F5B00A75B9A /* Hermes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* HermesApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Hermes-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "HermesApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Hermes-tvOS" */;
 			buildPhases = (
 				E30795F8E02F9CA75FA6CC02 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -256,14 +256,14 @@
 			);
 			dependencies = (
 			);
-			name = "HermesApp-tvOS";
-			productName = "HermesApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* HermesApp-tvOS.app */;
+			name = "Hermes-tvOS";
+			productName = "Hermes-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Hermes-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* HermesApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Hermes-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "HermesApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Hermes-tvOSTests" */;
 			buildPhases = (
 				BB384E99A711C1B9E6940164 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -275,9 +275,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "HermesApp-tvOSTests";
-			productName = "HermesApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* HermesApp-tvOSTests.xctest */;
+			name = "Hermes-tvOSTests";
+			productName = "Hermes-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Hermes-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "HermesApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Hermes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -319,10 +319,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* HermesApp */,
-				00E356ED1AD99517003FC87E /* HermesAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* HermesApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* HermesApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Hermes */,
+				00E356ED1AD99517003FC87E /* HermesTests */,
+				2D02E47A1E0B4A5D006451C7 /* Hermes-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Hermes-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,7 +382,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HermesApp/Pods-HermesApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Hermes/Pods-Hermes-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -391,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HermesApp/Pods-HermesApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hermes/Pods-Hermes-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -423,7 +423,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HermesApp-HermesAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hermes-HermesTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -445,7 +445,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HermesApp-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hermes-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,7 +458,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HermesApp-HermesAppTests/Pods-HermesApp-HermesAppTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Hermes-HermesTests/Pods-Hermes-HermesTests-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -467,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HermesApp-HermesAppTests/Pods-HermesApp-HermesAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hermes-HermesTests/Pods-Hermes-HermesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E30795F8E02F9CA75FA6CC02 /* [CP] Check Pods Manifest.lock */ = {
@@ -485,7 +485,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HermesApp-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hermes-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -507,7 +507,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HermesApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hermes-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -559,7 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* HermesAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* HermesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* HermesAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* HermesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,12 +594,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* HermesApp */;
+			target = 13B07F861A680F5B00A75B9A /* Hermes */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* HermesApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Hermes-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,7 +611,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = HermesApp;
+			path = Hermes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -619,14 +619,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83BA88B51D6EA07E27D0024D /* Pods-HermesApp-HermesAppTests.debug.xcconfig */;
+			baseConfigurationReference = 83BA88B51D6EA07E27D0024D /* Pods-Hermes-HermesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = HermesAppTests/Info.plist;
+				INFOPLIST_FILE = HermesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -636,17 +636,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HermesApp.app/HermesApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hermes.app/Hermes";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 326F979F7F79E9870ED4A0B2 /* Pods-HermesApp-HermesAppTests.release.xcconfig */;
+			baseConfigurationReference = 326F979F7F79E9870ED4A0B2 /* Pods-Hermes-HermesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = HermesAppTests/Info.plist;
+				INFOPLIST_FILE = HermesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -656,13 +656,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HermesApp.app/HermesApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hermes.app/Hermes";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4598B45F72AEC70428C1C3E8 /* Pods-HermesApp.debug.xcconfig */;
+			baseConfigurationReference = 4598B45F72AEC70428C1C3E8 /* Pods-Hermes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -712,7 +712,7 @@
 					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
-				INFOPLIST_FILE = HermesApp/Info.plist;
+				INFOPLIST_FILE = Hermes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -720,7 +720,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = HermesApp;
+				PRODUCT_NAME = Hermes;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -729,7 +729,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ACA4882B8BE104134161604 /* Pods-HermesApp.release.xcconfig */;
+			baseConfigurationReference = 6ACA4882B8BE104134161604 /* Pods-Hermes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -774,7 +774,7 @@
 					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
-				INFOPLIST_FILE = HermesApp/Info.plist;
+				INFOPLIST_FILE = Hermes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -782,7 +782,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = HermesApp;
+				PRODUCT_NAME = Hermes;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -790,7 +790,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 141F539ECBE5EE459D85A85D /* Pods-HermesApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 141F539ECBE5EE459D85A85D /* Pods-Hermes-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -801,14 +801,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "HermesApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "Hermes-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.HermesApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Hermes-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -818,7 +818,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97D3C9C650300E4A05EF82FF /* Pods-HermesApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = 97D3C9C650300E4A05EF82FF /* Pods-Hermes-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -829,14 +829,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "HermesApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "Hermes-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.HermesApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Hermes-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -846,7 +846,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CDC8193511A01CB36A1DBB9 /* Pods-HermesApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 2CDC8193511A01CB36A1DBB9 /* Pods-Hermes-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -856,24 +856,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "HermesApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Hermes-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.HermesApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Hermes-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HermesApp-tvOS.app/HermesApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hermes-tvOS.app/Hermes-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECD75DD976BFE113274DCD8C /* Pods-HermesApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = ECD75DD976BFE113274DCD8C /* Pods-Hermes-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -883,17 +883,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "HermesApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Hermes-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.HermesApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Hermes-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HermesApp-tvOS.app/HermesApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hermes-tvOS.app/Hermes-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1014,7 +1014,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HermesAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HermesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1023,7 +1023,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "HermesApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Hermes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1032,7 +1032,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "HermesApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Hermes-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1041,7 +1041,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "HermesApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Hermes-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1050,7 +1050,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "HermesApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Hermes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

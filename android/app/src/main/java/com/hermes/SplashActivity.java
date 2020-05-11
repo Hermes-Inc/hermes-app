@@ -1,8 +1,10 @@
-package com.hermesapp;
+package com.hermes;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.hermes.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
     @Override
