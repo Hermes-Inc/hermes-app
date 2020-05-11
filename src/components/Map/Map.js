@@ -77,12 +77,15 @@ const Map = () => {
     };
   }, []);
 
-  return (
-    !currentRegion
-      ? <View>
-        <Spinner/>
-      </View>
-      : <View style={{flex: 1}}>
+  const loading = (
+    <View>
+      <Spinner/>
+    </View>
+  );
+
+  // TODO: refactor inline style and enhance it
+  const loaded = (
+    <View style={{flex: 1}}>
       <MapView
         provider={PROVIDER_GOOGLE}
         style={styles.map}
@@ -93,17 +96,19 @@ const Map = () => {
         onPanDrag={onDrag}
         followsUserLocation={true}>
       </MapView>
-        <View
-          style={{
-            position: 'absolute',
-            top: '50%',
-            alignSelf: 'flex-end'
-          }}
-        >
-          <Button title={'Re-center'} onPress={onResetDrag}/>
-        </View>
+      <View
+        style={{
+          position: 'absolute',
+          top: '50%',
+          alignSelf: 'flex-end'
+        }}
+      >
+        <Button title={'Re-center'} onPress={onResetDrag}/>
       </View>
+    </View>
   );
+
+  return !currentRegion ? loading : loaded;
 };
 
 export default Map;

@@ -23,12 +23,9 @@ export default function App() {
   useEffect(() => {
     persist(() => {
       setReady(true);
+      setTimeout(() => SplashScreen.hide(), 5000);
     });
   });
-
-  useEffect(() => {
-    SplashScreen.hide();
-  }, []);
 
   const loading = (
     <View style={styles.container}>
